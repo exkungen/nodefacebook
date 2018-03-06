@@ -22,7 +22,7 @@ connection.connect(function(err) {
 
 
     }
-    FB.api('me/feed', { fields: 'insights.metric(post_impressions_unique),id,message,created_time,link',limit: 100, access_token:'EAADGAMZAy2GEBAAwvU3a9KSohZBh2ZAktKTZBYvM095xFSaZCHkXj05UeZCLFLTZCFhVLU6dvDAI6ZAP6hKgRSbPssOtn8YaZAISrSodkZA5zSAZBYVnngov6gYR7TYSg0jviqTPViHs6Y5QKUD0aER54pXTvNxRHo0HXBZCD2x6nHX7GgZDZD' }, function (res) {
+    FB.api('me/feed', { fields: 'insights.metric(post_impressions_unique),id,message,created_time,link',limit: 100, access_token:'' }, function (res) {
        let stringify = JSON.stringify(res.data);
        let parsed = JSON.parse(stringify);
        
